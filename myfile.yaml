@@ -1,0 +1,71 @@
+-   config:
+        name: testcase description
+        variables: {}
+-   test:
+        name: /auth/login
+        request:
+            data:
+                password: '123456'
+                username: admin
+            headers:
+                Content-Type: application/x-www-form-urlencoded
+                User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36
+                    (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+            method: POST
+            url: http://127.0.0.1:5000/auth/login
+        validate:
+        -   eq:
+            - status_code
+            - 200
+        -   eq:
+            - headers.Content-Type
+            - text/html; charset=utf-8
+-   test:
+        name: /3/update
+        request:
+            data:
+                body: "app = Flask(__name__, instance_relative_config=True) 创建 Flask\
+                    \ 实例。\r\n__name__ 是当前 Python 模块的名称。应用需要知道在哪里设置路径， 使用 __name__\
+                    \ 是一个方便的方法。\r\ninstance_relative_config=True 告诉应用配置文件是相对于 instance\
+                    \ folder 的相对路径。实例文件夹在 flaskr 包的外面，用于存放本地数据（例如配置密钥和数据库），不应当 提交到版本控制系统。\r\
+                    \napp.config.from_mapping() 设置一个应用的 缺省配置：\r\nSECRET_KEY 是被 Flask\
+                    \ 和扩展用于保证数据安全的。在开发过程中， 为了方便可以设置为 'dev' ，但是在发布的时候应当使用一个随机值来 重载它。\r\
+                    \nDATABASE SQLite 数据库文件存放在路径。它位于 Flask 用于存放实例的 app.instance_path\
+                    \ 之内。下一节会更详细 地学习数据库的东西。\r\napp.config.from_pyfile() 使用 config.py\
+                    \ 中的值来重载缺省配置，如果 config.py 存在的话。 例如，当正式部署的时候，用于设置一个正式的 SECRET_KEY\
+                    \ 。\r\ntest_config 也会被传递给工厂，并且会替代实例配置。这样可以实现 测试和开发的配置分离，相互独立。\r\
+                    \nos.makedirs() 可以确保 app.instance_path 存在。 Flask 不会自动 创建实例文件夹，但是必须确保创建这个文件夹，因为\
+                    \ SQLite 数据库文件会被 保存在里面。"
+                title: rdssssffffffff
+            headers:
+                Content-Type: application/x-www-form-urlencoded
+                User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36
+                    (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+            method: POST
+            url: http://127.0.0.1:5000/3/update
+        validate:
+        -   eq:
+            - status_code
+            - 200
+        -   eq:
+            - headers.Content-Type
+            - text/html; charset=utf-8
+-   test:
+        name: /create
+        request:
+            data:
+                body: fiddler!
+                title: my name
+            headers:
+                Content-Type: application/x-www-form-urlencoded
+                User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36
+                    (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+            method: POST
+            url: http://127.0.0.1:5000/create
+        validate:
+        -   eq:
+            - status_code
+            - 200
+        -   eq:
+            - headers.Content-Type
+            - text/html; charset=utf-8

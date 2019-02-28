@@ -1,0 +1,1678 @@
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> - TestReport</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0 auto;
+      width: 960px;
+    }
+    #summary {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    #summary th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #summary td {
+      background-color: lightblue;
+      text-align: center;
+      padding: 4px 8px;
+    }
+    .details {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    .details th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    .details tr .passed {
+      background-color: lightgreen;
+    }
+    .details tr .failed {
+      background-color: red;
+    }
+    .details tr .unchecked {
+      background-color: gray;
+    }
+    .details td {
+      background-color: lightblue;
+      padding: 5px 12px;
+    }
+    .details .detail {
+      background-color: lightgrey;
+      font-size: smaller;
+      padding: 5px 10px;
+      line-height: 20px;
+      text-align: left;
+    }
+    .details .success {
+      background-color: greenyellow;
+    }
+    .details .error {
+      background-color: red;
+    }
+    .details .failure {
+      background-color: salmon;
+    }
+    .details .skipped {
+      background-color: gray;
+    }
+
+    .button {
+      font-size: 1em;
+      padding: 6px;
+      width: 4em;
+      text-align: center;
+      background-color: #06d85f;
+      border-radius: 20px/50px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    a.button{
+      color: gray;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background: #2cffbd;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+      line-height: 25px;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      width: 50%;
+      position: relative;
+      transition: all 3s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      color: #06d85f;
+    }
+    .popup .content {
+      max-height: 80%;
+      overflow: auto;
+      text-align: left;
+    }
+    .popup .separator {
+      color:royalblue
+    }
+
+    @media screen and (max-width: 700px) {
+      .box {
+        width: 70%;
+      }
+      .popup {
+        width: 70%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Test Report: </h1>
+
+  <h2>Summary</h2>
+  <table id="summary">
+    <tr>
+      <th>START AT</th>
+      <td colspan="4">2019-02-26 17:25:54</td>
+    </tr>
+    <tr>
+      <th>DURATION</th>
+      <td colspan="4">0.464 seconds</td>
+    </tr>
+    <tr>
+      <th>PLATFORM</th>
+      <td>HttpRunner 2.0.3 </td>
+      <td>CPython 3.7.0b3 </td>
+      <td colspan="2">Windows-10-10.0.17763-SP0</td>
+    </tr>
+    <tr>
+      <th>STAT</th>
+      <th colspan="2">TESTCASES (success/fail)</th>
+      <th colspan="2">TESTSTEPS (success/fail/error/skip)</th>
+    </tr>
+    <tr>
+      <td>total (details) =></td>
+      <td colspan="2">1 (0/1)</td>
+      <td colspan="2">3 (0/3/0/0)</td>
+    </tr>
+  </table>
+
+  <h2>Details</h2>
+
+  
+  
+  <h3>testcase description</h3>
+  <table id="suite_1" class="details">
+    <tr>
+      <td>TOTAL: 3</td>
+      <td>SUCCESS: 0</td>
+      <td>FAILED: 3</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_1_1">
+      <th class="failure" style="width:5em;">failure</th>
+      <td colspan="2">/auth/login</td>
+      <td style="text-align:center;width:6em;">140.86 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_1_1">log-1</a>
+        <div id="popup_log_1_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /auth/login</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://127.0.0.1:5000/auth/login
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/x-www-form-urlencoded
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 30
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          password=123456&username=admin
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://127.0.0.1:5000/auth/login
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            302
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            FOUND
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'session': 'eyJ1c2VyX2lkIjoxfQ.XHUGIg.BgxWgIuXjNaopzKpw_6MBQ3qDeg'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Content-Type</strong>: text/html; charset=utf-8
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Length</strong>: 209
+                            </div>
+                            
+                            <div>
+                              <strong>Location</strong>: http://127.0.0.1:5000/
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Cookie
+                            </div>
+                            
+                            <div>
+                              <strong>Set-Cookie</strong>: session=eyJ1c2VyX2lkIjoxfQ.XHUGIg.BgxWgIuXjNaopzKpw_6MBQ3qDeg; HttpOnly; Path=/
+                            </div>
+                            
+                            <div>
+                              <strong>Server</strong>: Werkzeug/0.14.1 Python/3.7.0b3
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 26 Feb 2019 09:25:54 GMT
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            text/html; charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>text</th>
+                        <td>
+                          
+                              <pre>&lt;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 3.2 Final//EN&#34;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&#34;/&#34;&gt;/&lt;/a&gt;.  If not click the link.</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              
+              <div class="separator">==================================== redirect to ====================================</div>
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://127.0.0.1:5000/
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: session=eyJ1c2VyX2lkIjoxfQ.XHUGIg.BgxWgIuXjNaopzKpw_6MBQ3qDeg
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://127.0.0.1:5000/
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Content-Type</strong>: text/html; charset=utf-8
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Length</strong>: 2980
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Cookie
+                            </div>
+                            
+                            <div>
+                              <strong>Server</strong>: Werkzeug/0.14.1 Python/3.7.0b3
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 26 Feb 2019 09:25:54 GMT
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            text/html; charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>text</th>
+                        <td>
+                          
+                              <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;title&gt;Posts - Flaskr&lt;/title&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;/static/style.css&#34;&gt;
+&lt;nav&gt;
+    &lt;h1&gt;Flaskr&lt;/h1&gt;
+    &lt;ul&gt;
+        
+            &lt;li&gt;&lt;span&gt;admin&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;/auth/logout&#34;&gt;Log Out&lt;/a&gt;&lt;/li&gt;
+        
+    &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;section class=&#34;content&#34;&gt;
+    &lt;header&gt;
+        
+  &lt;h1&gt;Posts&lt;/h1&gt;
+  
+    &lt;a class=&#34;action&#34; href=&#34;/create&#34;&gt;New&lt;/a&gt;
+  
+
+    &lt;/header&gt;
+    
+    
+  
+    &lt;article class=&#34;post&#34;&gt;
+      &lt;header&gt;
+        &lt;div&gt;
+          &lt;!--&lt;h1&gt;my name&lt;/h1&gt;--&gt;
+ ... OMITTED 1788 CHARACTORS ...</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="failed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>302</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>eq</td>
+                      <td>text/html; charset=utf-8</td>
+                      <td>text/html; charset=utf-8</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>2980</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>140.86</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>6.637</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_1">traceback</a>
+          <div id="popup_attachment_1_1" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_1">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+  File &#34;e:\python37\lib\site-packages\httprunner\api.py&#34;, line 54, in test
+    test_runner.run_test(test_dict)
+httprunner.exceptions.ValidationFailure: validate: status_code equals 302(int)	==&gt; fail
+200(int) equals 302(int)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &#34;e:\python37\lib\site-packages\httprunner\api.py&#34;, line 56, in test
+    self.fail(str(ex))
+AssertionError: validate: status_code equals 302(int)	==&gt; fail
+200(int) equals 302(int)
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_2">
+      <th class="failure" style="width:5em;">failure</th>
+      <td colspan="2">/3/update</td>
+      <td style="text-align:center;width:6em;">108.63 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_2_1">log-1</a>
+        <div id="popup_log_1_2_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_2_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /3/update</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://127.0.0.1:5000/3/update
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/x-www-form-urlencoded
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: session=eyJ1c2VyX2lkIjoxfQ.XHUGIg.BgxWgIuXjNaopzKpw_6MBQ3qDeg
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 3526
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          body=app+%3D+Flask%28__name__%2C+instance_relative_config%3DTrue%29+%E5%88%9B%E5%BB%BA+Flask+%E5%AE%9E%E4%BE%8B%E3%80%82%0D%0A__name__+%E6%98%AF%E5%BD%93%E5%89%8D+Python+%E6%A8%A1%E5%9D%97%E7%9A%84%E5%90%8D%E7%A7%B0%E3%80%82%E5%BA%94%E7%94%A8%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93%E5%9C%A8%E5%93%AA%E9%87%8C%E8%AE%BE%E7%BD%AE%E8%B7%AF%E5%BE%84%EF%BC%8C+%E4%BD%BF%E7%94%A8+__name__+%E6%98%AF%E4%B8%80%E4%B8%AA%E6%96%B9%E4%BE%BF%E7%9A%84%E6%96%B9%E6%B3%95%E3%80%82%0D%0Ainstance_relative_config%3DTrue+%E5%91%8A%E8%AF%89%E5%BA%94%E7%94%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%98%AF%E7%9B%B8%E5%AF%B9%E4%BA%8E+instance+folder+%E7%9A%84%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E3%80%82%E5%AE%9E%E4%BE%8B%E6%96%87%E4%BB%B6%E5%A4%B9%E5%9C%A8+flaskr+%E5%8C%85%E7%9A%84%E5%A4%96%E9%9D%A2%EF%BC%8C%E7%94%A8%E4%BA%8E%E5%AD%98%E6%94%BE%E6%9C%AC%E5%9C%B0%E6%95%B0%E6%8D%AE%EF%BC%88%E4%BE%8B%E5%A6%82%E9%85%8D%E7%BD%AE%E5%AF%86%E9%92%A5%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%89%EF%BC%8C%E4%B8%8D%E5%BA%94%E5%BD%93+%E6%8F%90%E4%BA%A4%E5%88%B0%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E3%80%82%0D%0Aapp.config.from_mapping%28%29+%E8%AE%BE%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%BA%94%E7%94%A8%E7%9A%84+%E7%BC%BA%E7%9C%81%E9%85%8D%E7%BD%AE%EF%BC%9A%0D%0ASECRET_KEY+%E6%98%AF%E8%A2%AB+Flask+%E5%92%8C%E6%89%A9%E5%B1%95%E7%94%A8%E4%BA%8E%E4%BF%9D%E8%AF%81%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E7%9A%84%E3%80%82%E5%9C%A8%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E4%B8%AD%EF%BC%8C+%E4%B8%BA%E4%BA%86%E6%96%B9%E4%BE%BF%E5%8F%AF%E4%BB%A5%E8%AE%BE%E7%BD%AE%E4%B8%BA+%27dev%27+%EF%BC%8C%E4%BD%86%E6%98%AF%E5%9C%A8%E5%8F%91%E5%B8%83%E7%9A%84%E6%97%B6%E5%80%99%E5%BA%94%E5%BD%93%E4%BD%BF%E7%94%A8%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%80%BC%E6%9D%A5+%E9%87%8D%E8%BD%BD%E5%AE%83%E3%80%82%0D%0ADATABASE+SQLite+%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6%E5%AD%98%E6%94%BE%E5%9C%A8%E8%B7%AF%E5%BE%84%E3%80%82%E5%AE%83%E4%BD%8D%E4%BA%8E+Flask+%E7%94%A8%E4%BA%8E%E5%AD%98%E6%94%BE%E5%AE%9E%E4%BE%8B%E7%9A%84+app.instance_path+%E4%B9%8B%E5%86%85%E3%80%82%E4%B8%8B%E4%B8%80%E8%8A%82%E4%BC%9A%E6%9B%B4%E8%AF%A6%E7%BB%86+%E5%9C%B0%E5%AD%A6%E4%B9%A0%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E4%B8%9C%E8%A5%BF%E3%80%82%0D%0Aapp.config.from_pyfile%28%29+%E4%BD%BF%E7%94%A8+config.py+%E4%B8%AD%E7%9A%84%E5%80%BC%E6%9D%A5%E9%87%8D%E8%BD%BD%E7%BC%BA%E7%9C%81%E9%85%8D%E7%BD%AE%EF%BC%8C%E5%A6%82%E6%9E%9C+config.py+%E5%AD%98%E5%9C%A8%E7%9A%84%E8%AF%9D%E3%80%82+%E4%BE%8B%E5%A6%82%EF%BC%8C%E5%BD%93%E6%AD%A3%E5%BC%8F%E9%83%A8%E7%BD%B2%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E7%94%A8%E4%BA%8E%E8%AE%BE%E7%BD%AE%E4%B8%80%E4%B8%AA%E6%AD%A3%E5%BC%8F%E7%9A%84+SECRET_KEY+%E3%80%82%0D%0Atest_config+%E4%B9%9F%E4%BC%9A%E8%A2%AB%E4%BC%A0%E9%80%92%E7%BB%99%E5%B7%A5%E5%8E%82%EF%BC%8C%E5%B9%B6%E4%B8%94%E4%BC%9A%E6%9B%BF%E4%BB%A3%E5%AE%9E%E4%BE%8B%E9%85%8D%E7%BD%AE%E3%80%82%E8%BF%99%E6%A0%B7%E5%8F%AF%E4%BB%A5%E5%AE%9E%E7%8E%B0+%E6%B5%8B%E8%AF%95%E5%92%8C%E5%BC%80%E5%8F%91%E7%9A%84%E9%85%8D%E7%BD%AE%E5%88%86%E7%A6%BB%EF%BC%8C%E7%9B%B8%E4%BA%92%E7%8B%AC%E7%AB%8B%E3%80%82%0D%0Aos.makedirs%28%29+%E5%8F%AF%E4%BB%A5%E7%A1%AE%E4%BF%9D+app.instance_path+%E5%AD%98%E5%9C%A8%E3%80%82+Flask+%E4%B8%8D%E4%BC%9A%E8%87%AA%E5%8A%A8+%E5%88%9B%E5%BB%BA%E5%AE%9E%E4%BE%8B%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%8C%E4%BD%86%E6%98%AF%E5%BF%85%E9%A1%BB%E7%A1%AE%E4%BF%9D%E5%88%9B%E5%BB%BA%E8%BF%99%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%8C%E5%9B%A0%E4%B8%BA+SQLite+%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6%E4%BC%9A%E8%A2%AB+%E4%BF%9D%E5%AD%98%E5%9C%A8%E9%87%8C%E9%9D%A2%E3%80%82&title=rdssssffffffff
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://127.0.0.1:5000/3/update
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            302
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            FOUND
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Content-Type</strong>: text/html; charset=utf-8
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Length</strong>: 209
+                            </div>
+                            
+                            <div>
+                              <strong>Location</strong>: http://127.0.0.1:5000/
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Cookie
+                            </div>
+                            
+                            <div>
+                              <strong>Server</strong>: Werkzeug/0.14.1 Python/3.7.0b3
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 26 Feb 2019 09:25:54 GMT
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            text/html; charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>text</th>
+                        <td>
+                          
+                              <pre>&lt;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 3.2 Final//EN&#34;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&#34;/&#34;&gt;/&lt;/a&gt;.  If not click the link.</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              
+              <div class="separator">==================================== redirect to ====================================</div>
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://127.0.0.1:5000/
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: session=eyJ1c2VyX2lkIjoxfQ.XHUGIg.BgxWgIuXjNaopzKpw_6MBQ3qDeg
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://127.0.0.1:5000/
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Content-Type</strong>: text/html; charset=utf-8
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Length</strong>: 2980
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Cookie
+                            </div>
+                            
+                            <div>
+                              <strong>Server</strong>: Werkzeug/0.14.1 Python/3.7.0b3
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 26 Feb 2019 09:25:54 GMT
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            text/html; charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>text</th>
+                        <td>
+                          
+                              <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;title&gt;Posts - Flaskr&lt;/title&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;/static/style.css&#34;&gt;
+&lt;nav&gt;
+    &lt;h1&gt;Flaskr&lt;/h1&gt;
+    &lt;ul&gt;
+        
+            &lt;li&gt;&lt;span&gt;admin&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;/auth/logout&#34;&gt;Log Out&lt;/a&gt;&lt;/li&gt;
+        
+    &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;section class=&#34;content&#34;&gt;
+    &lt;header&gt;
+        
+  &lt;h1&gt;Posts&lt;/h1&gt;
+  
+    &lt;a class=&#34;action&#34; href=&#34;/create&#34;&gt;New&lt;/a&gt;
+  
+
+    &lt;/header&gt;
+    
+    
+  
+    &lt;article class=&#34;post&#34;&gt;
+      &lt;header&gt;
+        &lt;div&gt;
+          &lt;!--&lt;h1&gt;my name&lt;/h1&gt;--&gt;
+ ... OMITTED 1788 CHARACTORS ...</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="failed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>302</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>eq</td>
+                      <td>text/html; charset=utf-8</td>
+                      <td>text/html; charset=utf-8</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>2980</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>108.63</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>6.267</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_2">traceback</a>
+          <div id="popup_attachment_1_2" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_2">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+  File &#34;e:\python37\lib\site-packages\httprunner\api.py&#34;, line 54, in test
+    test_runner.run_test(test_dict)
+httprunner.exceptions.ValidationFailure: validate: status_code equals 302(int)	==&gt; fail
+200(int) equals 302(int)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &#34;e:\python37\lib\site-packages\httprunner\api.py&#34;, line 56, in test
+    self.fail(str(ex))
+AssertionError: validate: status_code equals 302(int)	==&gt; fail
+200(int) equals 302(int)
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_3">
+      <th class="failure" style="width:5em;">failure</th>
+      <td colspan="2">/create</td>
+      <td style="text-align:center;width:6em;">99.20 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_3_1">log-1</a>
+        <div id="popup_log_1_3_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_3_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /create</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://127.0.0.1:5000/create
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/x-www-form-urlencoded
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: session=eyJ1c2VyX2lkIjoxfQ.XHUGIg.BgxWgIuXjNaopzKpw_6MBQ3qDeg
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 29
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          body=fiddler%21&title=my+name
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://127.0.0.1:5000/create
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            302
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            FOUND
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Content-Type</strong>: text/html; charset=utf-8
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Length</strong>: 209
+                            </div>
+                            
+                            <div>
+                              <strong>Location</strong>: http://127.0.0.1:5000/
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Cookie
+                            </div>
+                            
+                            <div>
+                              <strong>Server</strong>: Werkzeug/0.14.1 Python/3.7.0b3
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 26 Feb 2019 09:25:55 GMT
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            text/html; charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>text</th>
+                        <td>
+                          
+                              <pre>&lt;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 3.2 Final//EN&#34;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&#34;/&#34;&gt;/&lt;/a&gt;.  If not click the link.</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              
+              <div class="separator">==================================== redirect to ====================================</div>
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://127.0.0.1:5000/
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: session=eyJ1c2VyX2lkIjoxfQ.XHUGIg.BgxWgIuXjNaopzKpw_6MBQ3qDeg
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://127.0.0.1:5000/
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Content-Type</strong>: text/html; charset=utf-8
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Length</strong>: 3362
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Cookie
+                            </div>
+                            
+                            <div>
+                              <strong>Server</strong>: Werkzeug/0.14.1 Python/3.7.0b3
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 26 Feb 2019 09:25:55 GMT
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            text/html; charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>text</th>
+                        <td>
+                          
+                              <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;title&gt;Posts - Flaskr&lt;/title&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;/static/style.css&#34;&gt;
+&lt;nav&gt;
+    &lt;h1&gt;Flaskr&lt;/h1&gt;
+    &lt;ul&gt;
+        
+            &lt;li&gt;&lt;span&gt;admin&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;/auth/logout&#34;&gt;Log Out&lt;/a&gt;&lt;/li&gt;
+        
+    &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;section class=&#34;content&#34;&gt;
+    &lt;header&gt;
+        
+  &lt;h1&gt;Posts&lt;/h1&gt;
+  
+    &lt;a class=&#34;action&#34; href=&#34;/create&#34;&gt;New&lt;/a&gt;
+  
+
+    &lt;/header&gt;
+    
+    
+  
+    &lt;article class=&#34;post&#34;&gt;
+      &lt;header&gt;
+        &lt;div&gt;
+          &lt;!--&lt;h1&gt;my name&lt;/h1&gt;--&gt;
+ ... OMITTED 2170 CHARACTORS ...</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="failed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>302</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>eq</td>
+                      <td>text/html; charset=utf-8</td>
+                      <td>text/html; charset=utf-8</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>3362</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>99.2</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>12.594</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_3">traceback</a>
+          <div id="popup_attachment_1_3" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_3">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+  File &#34;e:\python37\lib\site-packages\httprunner\api.py&#34;, line 54, in test
+    test_runner.run_test(test_dict)
+httprunner.exceptions.ValidationFailure: validate: status_code equals 302(int)	==&gt; fail
+200(int) equals 302(int)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &#34;e:\python37\lib\site-packages\httprunner\api.py&#34;, line 56, in test
+    self.fail(str(ex))
+AssertionError: validate: status_code equals 302(int)	==&gt; fail
+200(int) equals 302(int)
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+</body>
